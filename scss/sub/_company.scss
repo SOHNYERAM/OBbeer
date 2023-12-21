@@ -1,0 +1,297 @@
+#guard {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-image: url(../img_sub_company/gnb_guard.png);
+	margin-bottom: 100px;
+}
+.con1 {
+	width: 100%;
+	height: 350px;
+	padding: 0 200px;
+	h2 {
+		width: 100%;
+		font-family: 'Pretendard-Regular';
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 1;
+		color: #000;
+		margin-bottom: 50px;
+	}
+	p {
+		width: 100%;
+		font-family: 'Pretendard-Regular';
+		font-weight: 100;
+		font-size: 30px;
+		line-height: 1.4;
+		color: #000;
+	}
+}
+.con2 {
+	width: 100%;
+	height: 625px;
+	position: relative;
+	display: flex;
+	padding: 0 200px;
+	margin-bottom: 150px;
+
+	.letters {
+		width: 100%;
+		height: 100%;
+		// padding-left: 200px;
+		h2 {
+			width: 100%;
+			font-family: 'Pretendard-Regular';
+			font-weight: bold;
+			font-size: 40px;
+			line-height: 1;
+			color: #000;
+			margin: 50px 0px;
+		}
+		p {
+			display: block;
+			width: 100%;
+			height: 100%;
+			font-family: 'Pretendard-Regular';
+			font-weight: 100;
+			font-size: 30px;
+			line-height: 1.4;
+			color: #000;
+			// margin-bottom: 150px;
+		}
+	}
+	.slide {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0%;
+			right: 0%;
+		}
+	}
+}
+.con3 {
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	margin-bottom: 150px;
+	article {
+		width: 100%;
+		padding: 0 200px;
+		h2 {
+			width: 100%;
+			font-family: 'Pretendard-Regular';
+			font-weight: bold;
+			font-size: 40px;
+			line-height: 1;
+			color: #000;
+			margin-bottom: 50px;
+		}
+		p {
+			width: 100%;
+			display: block;
+			width: 100%;
+			height: 100%;
+			font-family: 'Pretendard-Regular';
+			font-weight: 100;
+			font-size: 30px;
+			line-height: 1.4;
+			color: #000;
+			margin-bottom: 100px;
+		}
+	}
+	img {
+		width: 1400px;
+		height: 600px;
+		margin: 0 260px;
+	}
+}
+.con4 {
+	width: 100%;
+	height: 640px;
+	margin-bottom: 100px;
+	position: relative;
+	h2 {
+		width: 100%;
+		font-family: 'Pretendard-Regular';
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 1;
+		color: #000;
+		text-align: center;
+		margin: 50px 0px;
+	}
+	img {
+		width: 700px;
+		height: 500px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+@media screen and (max-width: 874px) {
+	#guard {
+		width: 100vh;
+		height: 30vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.con1 {
+		height: 25vh;
+		padding: 0 5%;
+		h2 {
+			font-size: 4vw;
+			margin-bottom: 3%;
+		}
+		p {
+			font-size: 2vw;
+		}
+	}
+	.con2 {
+		width: 122%;
+		height: 35vh;
+		padding: 0 5%;
+		margin-bottom: 7%;
+		.letters {
+			h2 {
+				font-size: 4vw;
+				line-height: 1;
+				margin: 0;
+				margin-bottom: 5%;
+			}
+			p {
+				font-size: 2vw;
+			}
+		}
+		.slide {
+			position: relative;
+			img {
+				width: 55%;
+				height: 80%;
+				position: absolute;
+				top: 0%;
+				left: 5%;
+			}
+		}
+	}
+	.con3 {
+		width: 100%;
+		height: 70vh;
+		position: relative;
+		margin-bottom: 7%;
+		article {
+			width: 100%;
+			padding: 0 5%;
+			h2 {
+				width: 100%;
+				font-size: 4vw;
+				margin-bottom: 3%;
+			}
+			p {
+				font-size: 2vw;
+				margin-bottom: 5%;
+			}
+		}
+		img {
+			width: 80vw;
+			height: 40vh;
+			margin: 0 9%;
+		}
+	}
+	.con4 {
+		h2 {
+			font-size: 4vw;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	#guard {
+		width: 100vh;
+		height: 20vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin-bottom: 15%;
+	}
+	.con1 {
+		height: 20vh;
+		margin-bottom: 5%;
+		h2 {
+			font-size: 5vw;
+			margin-bottom: 5%;
+		}
+		p {
+			font-size: 3vw;
+		}
+	}
+	.con2 {
+		width: 100%;
+		height: 70vh;
+		flex-direction: column;
+		padding: 0 5%;
+		margin-bottom: 8%;
+		.letters {
+			h2 {
+				font-size: 5vw;
+				line-height: 1;
+				margin: 0;
+				margin-bottom: 5%;
+			}
+			p {
+				font-size: 3vw;
+				// padding-bottom: 10%;
+			}
+		}
+		.slide {
+			position: relative;
+			img {
+				width: 70%;
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -60%);
+			}
+		}
+	}
+	.con3 {
+		height: 50vh;
+		position: relative;
+		margin-bottom: 15%;
+		article {
+			h2 {
+				font-size: 5vw;
+				margin-bottom: 5%;
+			}
+			p {
+				font-size: 3vw;
+				margin-bottom: 7%;
+			}
+		}
+		img {
+			width: 80vw;
+			height: 25vh;
+		}
+	}
+	.con4 {
+		width: 100vw;
+		height: 55vh;
+		margin-bottom: 0;
+		h2 {
+			font-size: 5vw;
+			margin: 0px;
+			margin-bottom: 7%;
+		}
+		img {
+			width: 80vw;
+			height: 40vh;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
