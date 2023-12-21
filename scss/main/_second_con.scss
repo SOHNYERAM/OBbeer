@@ -3,6 +3,10 @@
 	margin: 0 auto;
 	margin-bottom: 20px;
 	padding: 10px;
+	opacity: 0;
+	transform: translateY(8%);
+	transition: all 1s;
+	// js에서 offsetTop조절하고 다시해보기
 	.inner {
 		width: 1500px;
 		height: 816px;
@@ -12,7 +16,6 @@
 			width: 100%;
 			height: 100%;
 			display: flex;
-
 			.one {
 				width: 740px;
 				height: 100%;
@@ -30,6 +33,9 @@
 					img {
 						width: 100%;
 						height: 100%;
+						opacity: 0;
+						transform: translateY(2%);
+						transition: all 0.6s;
 					}
 					h2 {
 						width: 100%;
@@ -37,13 +43,14 @@
 						top: 34%;
 						left: 50%;
 						transform: translate(-50%, -34%);
-
 						font-family: 'Pretendard-Regular';
 						font-weight: 600;
 						font-size: 40px;
 						line-height: 1;
 						color: #ba962d;
 						text-align: center;
+						opacity: 0;
+						transition: all 0.4s;
 					}
 					p:nth-of-type(1) {
 						width: 100%;
@@ -57,6 +64,8 @@
 						line-height: 1.3;
 						color: #fff;
 						text-align: center;
+						opacity: 0;
+						transition: all 0.4s;
 					}
 					p:nth-of-type(2) {
 						width: 100%;
@@ -70,6 +79,8 @@
 						line-height: 1.3;
 						color: #ba962d;
 						text-align: center;
+						opacity: 0;
+						transition: all 0.4s;
 					}
 					p:nth-of-type(3) {
 						width: 100%;
@@ -83,6 +94,8 @@
 						line-height: 1.3;
 						color: #b3ae7a;
 						text-align: center;
+						opacity: 0;
+						transition: all 0.4s;
 					}
 				}
 			}
@@ -121,7 +134,7 @@
 					h2 {
 						width: 100%;
 						position: absolute;
-						top: 30%;
+						top: 32%;
 						left: 50%;
 						transform: translate(-50%, -30%);
 						font-family: 'Pretendard-Regular';
@@ -130,11 +143,13 @@
 						line-height: 1;
 						color: #fff;
 						text-align: center;
+						opacity: 0;
+						transition: all 0.5s;
 					}
 					h3 {
 						width: 100%;
 						position: absolute;
-						bottom: 10%;
+						bottom: 8%;
 						left: 50%;
 						transform: translate(-50%, -10%);
 						font-family: 'Pretendard-Regular';
@@ -144,8 +159,8 @@
 						color: #fff;
 						text-align: left;
 						padding: 0 20px;
-						// strong {
-						// }
+						opacity: 0;
+						transition: all 0.5s;
 					}
 				}
 				.hire {
@@ -176,7 +191,7 @@
 					h2 {
 						width: 100%;
 						position: absolute;
-						top: 30%;
+						top: 32%;
 						left: 50%;
 						transform: translate(-50%, -30%);
 						font-family: 'Pretendard-Regular';
@@ -185,11 +200,13 @@
 						line-height: 1;
 						color: #fff;
 						text-align: center;
+						opacity: 0;
+						transition: all 0.6s;
 					}
 					h3 {
 						width: 100%;
 						position: absolute;
-						bottom: 10%;
+						bottom: 8%;
 						left: 50%;
 						transform: translate(-50%, -10%);
 						font-family: 'Pretendard-Regular';
@@ -199,8 +216,8 @@
 						color: #fff;
 						text-align: left;
 						padding: 0 20px;
-						// strong {
-						// }
+						opacity: 0;
+						transition: all 0.4s;
 					}
 				}
 				.hoeGaarden {
@@ -218,7 +235,7 @@
 					h2 {
 						width: 100%;
 						position: absolute;
-						top: 20%;
+						top: 22%;
 						left: 10%;
 						font-family: 'Pretendard-Regular';
 						font-weight: 600;
@@ -228,6 +245,8 @@
 						color: #b4c6ea;
 						text-align: left;
 						padding: 0 30px;
+						opacity: 0;
+						transition: all 0.4s;
 					}
 					p {
 						width: 100%;
@@ -255,6 +274,68 @@
 						top: 50%;
 						left: 50%;
 						transform: translate(-50%, -50%);
+					}
+				}
+			}
+		}
+	}
+	&.on {
+		transform: translateY(0%);
+		opacity: 1;
+		.inner {
+			.wrap {
+				.one {
+					.hanMac {
+						img {
+							transform: translateY(0%);
+							opacity: 1;
+						}
+						h2 {
+							opacity: 1;
+						}
+						p:nth-of-type(1) {
+							opacity: 1;
+						}
+						p:nth-of-type(2) {
+							opacity: 1;
+						}
+						p:nth-of-type(3) {
+							opacity: 1;
+						}
+					}
+				}
+				.two {
+					.cs {
+						h2 {
+							position: absolute;
+							top: 30%;
+							left: 50%;
+							transform: translate(-50%, -30%);
+							opacity: 1;
+						}
+						h3 {
+							opacity: 1;
+						}
+					}
+					.hire {
+						h2 {
+							position: absolute;
+							top: 30%;
+							left: 50%;
+							transform: translate(-50%, -30%);
+							opacity: 1;
+						}
+						h3 {
+							opacity: 1;
+						}
+					}
+					.hoeGaarden {
+						h2 {
+							position: absolute;
+							top: 20%;
+							left: 10%;
+							opacity: 1;
+						}
 					}
 				}
 			}
@@ -531,3 +612,4 @@
 		}
 	}
 }
+@keyframes;
