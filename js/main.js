@@ -45,3 +45,8 @@ window.addEventListener('scroll', () => {
 		}
 	});
 });
+
+const obm = document.querySelector(".obM");
+window.addEventListener("load",()=>{
+	obm.classList.add("on");
+})
