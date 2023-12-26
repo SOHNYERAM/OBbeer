@@ -3,6 +3,9 @@
 	margin: 0 auto;
 	margin-bottom: 20px;
 	position: relative;
+	opacity: 0;
+	transform: translateY(8%);
+	transition: all 1s;
 	.inner {
 		width: 1920px;
 		height: 627px;
@@ -21,8 +24,10 @@
 				color: #fff;
 				text-align: left;
 				padding-top: 120px;
-				padding-left: 210px;
+				padding-left: 0px;
 				letter-spacing: 2px;
+				opacity: 0;
+				transition: all 0.8s;
 				strong {
 					font-size: 40px;
 				}
@@ -36,8 +41,10 @@
 				color: #fff;
 				text-align: left;
 				padding-top: 40px;
-				padding-left: 210px;
+				padding-left: 0px;
 				letter-spacing: 2px;
+				opacity: 0;
+				transition: all 0.8s 0.2s;
 			}
 
 			p:nth-of-type(2) {
@@ -48,9 +55,11 @@
 				line-height: 1.4;
 				color: #fff;
 				text-align: left;
-				padding-left: 210px;
+				padding-left: 0px;
 				padding-top: 40px;
 				letter-spacing: 2px;
+				opacity: 0;
+				transition: all 0.8s 0.3s;
 			}
 			button {
 				width: 320px;
@@ -60,9 +69,11 @@
 				position: absolute;
 				left: 210px;
 				bottom: 120px;
+				opacity: 0;
+				transition: 0.8s 0.4s;
 
 				&:hover {
-					transition: 0.5s;
+					transition: 0.2s;
 					background-color: #fff;
 					-webkit-text-fill-color: #00392a;
 				}
@@ -82,6 +93,29 @@
 			}
 		}
 		background-image: url(../img_main/open_innovation/오픈이노베니션_person.png);
+	}
+	&.on {
+		transform: translateY(0%);
+		opacity: 1;
+		.inner {
+			.txt {
+				p:nth-of-type(1) {
+					padding-left: 210px;
+					opacity: 1;
+				}
+				h3 {
+					padding-left: 210px;
+					opacity: 1;
+				}
+				p:nth-of-type(2) {
+					padding-left: 210px;
+					opacity: 1;
+				}
+				button {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
 @media screen and (max-width: 874px) {
