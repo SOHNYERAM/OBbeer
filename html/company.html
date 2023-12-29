@@ -11,6 +11,16 @@
 			size="16x16"
 			type="image/png"
 		/>
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script defer src="../js/main.js"></script>
 	</head>
 	<body>
@@ -93,7 +103,7 @@
 			</div>
 		</header>
 		<div id="guard"></div>
-		<div class="con1">
+		<div class="con1 scrollView load">
 			<h2>대한민국 대표 맥주 전문기업, 오비맥주</h2>
 			<p>
 				오비맥주는 1933년 태동해 지난 90여년간 한국 주류산업을 이쓸어 온
@@ -102,7 +112,7 @@
 				생산할 수 잇는 최신 자동화 설비를 갖추고 있습니다.
 			</p>
 		</div>
-		<div class="con2">
+		<div class="con2 scrollView">
 			<article class="letters">
 				<h2>국내 유일 맥주 전문 기업 오비맥주!</h2>
 				<p>
@@ -117,30 +127,42 @@
 					브랜드 포트폴리오로 국내 맥주시장을 견인하고 있습니다.
 				</p>
 			</article>
-			<article class="slide">
-				<img
-					src="../img_sub_company/slide/cass_slide.png"
-					alt="오비맥주의 브랜드맥주 중 카스입니다."
-				/>
-				<img
-					src="../img_sub_company/slide/ob_slide.png"
-					alt="오비맥주의 브랜드맥주 중 오비라거입니다."
-				/>
-				<img
-					src="../img_sub_company/slide/hanmac_slide.png"
-					alt="오비맥주의 브랜드맥주 중 한맥입니다."
-				/>
-				<img
-					src="../img_sub_company/slide/stella_slide.png"
-					alt="오비맥주의 브랜드맥주 중 하나인 스텔라 아르투아입니다."
-				/>
-				<img
-					src="../img_sub_company/slide/hoegaarden.png"
-					alt="오비맥주의 브랜드맥주 중 호가든입니다."
-				/>
-			</article>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img
+							src="../img_sub_company/slide/cass_slide.png"
+							alt="오비맥주의 브랜드맥주 중 카스입니다."
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="../img_sub_company/slide/ob_slide.png"
+							alt="오비맥주의 브랜드맥주 중 오비라거입니다."
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="../img_sub_company/slide/hanmac_slide.png"
+							alt="오비맥주의 브랜드맥주 중 한맥입니다."
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="../img_sub_company/slide/stella_slide.png"
+							alt="오비맥주의 브랜드맥주 중 하나인 스텔라 아르투아입니다."
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="../img_sub_company/slide/hoegaarden.png"
+							alt="오비맥주의 브랜드맥주 중 호가든입니다."
+						/>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="con3">
+		<div class="con3 scrollView">
 			<article>
 				<h2>한국맥주 세계화에 앞장서는 오비맥주</h2>
 				<p>
@@ -159,7 +181,7 @@
 				alt="오비맥주의 수출국을 표시한 세계지도입니다."
 			/>
 		</div>
-		<div class="con4">
+		<div class="con4 scrollView">
 			<h2>우리회사 슬로건</h2>
 			<img
 				src="../img_sub_company/slogan.png"
@@ -231,5 +253,11 @@
 				<h2>TOP</h2>
 			</a>
 		</footer>
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				effect: 'cards',
+				grabCursor: true,
+			});
+		</script>
 	</body>
 </html>

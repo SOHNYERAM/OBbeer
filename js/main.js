@@ -32,7 +32,7 @@ function setPosition() {
 	}
 }
 setPosition();
-console.log(positionArray); //[0:1190  1:2046  2:2693]
+console.log(positionArray);
 
 window.addEventListener('scroll', () => {
 	let scroll = window.scrollY || window.pageYOffset;
@@ -45,8 +45,8 @@ window.addEventListener('scroll', () => {
 		}
 	});
 });
-
-const obm = document.querySelector(".obM");
-window.addEventListener("load",()=>{
-	obm.classList.add("on");
-})
+// 서브페이지 첫 화면 로드
+const load = document.querySelector('.load');
+window.addEventListener('load', () => {
+	load.classList.add('on');
+});

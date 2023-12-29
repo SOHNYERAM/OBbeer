@@ -3067,8 +3067,8 @@ footer .btnTop:hover h2 {
   opacity: 1;
 }
 .goods.on div {
-  opacity: 1;
   transform: translateY(0%);
+  opacity: 1;
 }
 
 @keyframes bearLeft {
@@ -3344,8 +3344,10 @@ footer .btnTop:hover h2 {
 
 .con1 {
   width: 100%;
-  height: 350px;
+  height: 300px;
   padding: 0 200px;
+  opacity: 1;
+  transition: all 1s;
 }
 .con1 h2 {
   width: 100%;
@@ -3355,6 +3357,8 @@ footer .btnTop:hover h2 {
   line-height: 1;
   color: #000;
   margin-bottom: 50px;
+  opacity: 0;
+  transition: all 1.2s;
 }
 .con1 p {
   width: 100%;
@@ -3363,6 +3367,20 @@ footer .btnTop:hover h2 {
   font-size: 30px;
   line-height: 1.4;
   color: #000;
+  transform: translateY(10%);
+  opacity: 0;
+  transition: all 1s;
+}
+.con1.on {
+  height: 350px;
+  opacity: 1;
+}
+.con1.on h2 {
+  opacity: 1;
+}
+.con1.on p {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .con2 {
@@ -3376,6 +3394,8 @@ footer .btnTop:hover h2 {
 .con2 .letters {
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: all 1s;
 }
 .con2 .letters h2 {
   width: 100%;
@@ -3385,6 +3405,8 @@ footer .btnTop:hover h2 {
   line-height: 1;
   color: #000;
   margin: 50px 0px;
+  opacity: 0;
+  transition: all 1.2s;
 }
 .con2 .letters p {
   display: block;
@@ -3395,16 +3417,43 @@ footer .btnTop:hover h2 {
   font-size: 30px;
   line-height: 1.4;
   color: #000;
+  transform: translateY(7%);
+  opacity: 0;
+  transition: all 1s;
 }
-.con2 .slide {
+.con2 .mySwiper {
+  width: 625px;
+  height: 625px;
+  position: relative;
+  transition: all 1s;
+  opacity: 0;
+}
+.con2 .mySwiper .swiper-wrapper {
   width: 100%;
   height: 100%;
-  position: relative;
 }
-.con2 .slide img {
+.con2 .mySwiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.con2 .mySwiper .swiper-wrapper .swiper-slide img {
   position: absolute;
   top: 0%;
   right: 0%;
+}
+.con2.on .letters {
+  opacity: 1;
+}
+.con2.on .letters h2 {
+  opacity: 1;
+}
+.con2.on .letters p {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.con2.on .mySwiper {
+  opacity: 1;
 }
 
 .con3 {
@@ -3425,6 +3474,8 @@ footer .btnTop:hover h2 {
   line-height: 1;
   color: #000;
   margin-bottom: 50px;
+  opacity: 0;
+  transition: all 1.2s;
 }
 .con3 article p {
   width: 100%;
@@ -3437,11 +3488,28 @@ footer .btnTop:hover h2 {
   line-height: 1.4;
   color: #000;
   margin-bottom: 100px;
+  transform: translateY(7%);
+  opacity: 0;
+  transition: all 1s;
 }
 .con3 img {
   width: 1400px;
   height: 600px;
   margin: 0 260px;
+  transform: translateY(7%);
+  opacity: 0;
+  transition: all 1s 0.5s;
+}
+.con3.on article h2 {
+  opacity: 1;
+}
+.con3.on article p {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.con3.on img {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .con4 {
@@ -3459,13 +3527,28 @@ footer .btnTop:hover h2 {
   color: #000;
   text-align: center;
   margin: 50px 0px;
+  opacity: 0;
+  transition: all 1s;
 }
 .con4 img {
   width: 700px;
   height: 500px;
   position: absolute;
   left: 50%;
+  top: 52%;
   transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s 0.5s;
+}
+.con4.on h2 {
+  opacity: 1;
+}
+.con4.on img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
 }
 
 @media screen and (max-width: 874px) {
@@ -3502,15 +3585,25 @@ footer .btnTop:hover h2 {
   .con2 .letters p {
     font-size: 2vw;
   }
-  .con2 .slide {
+  .con2 .mySwiper {
+    width: 50%;
+    height: 100%;
     position: relative;
   }
-  .con2 .slide img {
-    width: 55%;
-    height: 80%;
+  .con2 .mySwiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .con2 .mySwiper .swiper-wrapper .swiper-slide {
+    width: 400px;
+    height: 400px;
+  }
+  .con2 .mySwiper .swiper-wrapper .swiper-slide img {
+    width: 400px;
+    height: 400px;
     position: absolute;
     top: 0%;
-    left: 5%;
+    left: 0%;
   }
   .con3 {
     width: 100%;
