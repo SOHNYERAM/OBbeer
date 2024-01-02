@@ -400,9 +400,8 @@
 							left: 50%;
 							transform: translate(-50%, -20%);
 						}
-
 						h3 {
-							font-size: 7vw;
+							font-size: 6vw;
 							letter-spacing: 3px;
 							position: absolute;
 							bottom: 12%;
@@ -428,7 +427,7 @@
 							transform: translate(-50%, -20%);
 						}
 						h3 {
-							font-size: 7vw;
+							font-size: 6vw;
 							letter-spacing: 3px;
 							position: absolute;
 							bottom: 12%;
@@ -449,6 +448,27 @@
 						}
 						p {
 							font-size: 2vw;
+						}
+					}
+				}
+			}
+		}
+		&.on {
+			transform: translateY(0%);
+			opacity: 1;
+			.inner {
+				.wrap {
+					.two {
+						.hoeGaarden {
+							h2 {
+								position: absolute;
+								top: 20%;
+								left: 10%;
+								opacity: 1;
+							}
+							p {
+								font-size: 20px;
+							}
 						}
 					}
 				}
@@ -517,7 +537,7 @@
 					.cs {
 						width: 100%;
 						height: 100%;
-						margin-right: none;
+						margin-right: 0px;
 						margin-bottom: 0px;
 						&:hover {
 							transition: none;
@@ -533,7 +553,7 @@
 						}
 
 						h3 {
-							font-size: 9vw;
+							font-size: 7vw;
 							letter-spacing: 3px;
 							position: absolute;
 							bottom: 5%;
@@ -559,7 +579,7 @@
 							transform: translate(-50%, -20%);
 						}
 						h3 {
-							font-size: 9vw;
+							font-size: 7vw;
 							letter-spacing: 3px;
 							position: absolute;
 							bottom: 5%;
@@ -581,16 +601,16 @@
 						h2 {
 							position: absolute;
 							top: 20%;
-							left: 7%;
+							left: 5%;
 							font-size: 5vw;
 							line-height: 1.3;
-							padding: 0;
+							padding: 0px;
 						}
 						p {
 							position: absolute;
 							bottom: 20%;
 							left: 7%;
-							font-size: 3vw;
+							font-size: 2vw;
 							padding: 0;
 						}
 						img:nth-of-type(1) {
@@ -604,6 +624,24 @@
 							top: 55%;
 							left: 60%;
 							transform: translate(-30%, -50%);
+						}
+					}
+				}
+			}
+		}
+		&.on {
+			.inner {
+				.wrap {
+					.two {
+						.hoeGaarden {
+							h2 {
+								position: absolute;
+								top: 20%;
+								left: 7%;
+							}
+							p {
+								font-size: 11px;
+							}
 						}
 					}
 				}
