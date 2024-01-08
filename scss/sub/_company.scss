@@ -36,7 +36,6 @@
 		transition: all 1s;
 	}
 	&.on {
-		height: 350px;
 		opacity: 1;
 		h2 {
 			opacity: 1;
@@ -47,7 +46,6 @@
 		}
 	}
 }
-
 .con2 {
 	width: 100%;
 	height: 625px;
@@ -243,8 +241,8 @@
 		}
 	}
 	.con2 {
-		width: 122%;
-		height: 35vh;
+		width: 100%;
+		height: 40vh;
 		padding: 0 5%;
 		margin-bottom: 7%;
 		.letters {
@@ -258,22 +256,51 @@
 				font-size: 2vw;
 			}
 		}
-		.mySwiper {
-			width: 100%;
-			height: 100%;
-			position: relative;
-			.swiper-wrapper {
-				width: 300px;
-				height: 300px;
-				.swiper-slide {
-					width: 100%;
-					height: 100%;
-					img {
+		// .mySwiper {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	position: relative;
+		// 	.swiper-wrapper {
+		// 		width: 300px;
+		// 		height: 300px;
+		// 		.swiper-slide {
+		// 			width: 100%;
+		// 			height: 100%;
+		// 			img {
+		// 				width: 100%;
+		// 				height: 100%;
+		// 				position: absolute;
+		// 				top: 0%;
+		// 				left: 0%;
+		// 			}
+		// 		}
+		// 	}
+		// }
+		&.on {
+			.letters {
+				h2 {
+					width: 90%;
+					line-height: 1.2;
+				}
+				p {
+					width: 115%;
+				}
+			}
+			.mySwiper {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				left: 5%;
+				.swiper-wrapper {
+					width: 385px;
+					height: 330px;
+					.swiper-slide {
 						width: 100%;
 						height: 100%;
-						position: absolute;
-						top: 0%;
-						left: 0%;
+						img {
+							width: 100%;
+							height: 100%;
+						}
 					}
 				}
 			}
@@ -331,7 +358,7 @@
 	}
 	.con2 {
 		width: 100%;
-		height: 70vh;
+		height: 80vh;
 		flex-direction: column;
 		padding: 0 5%;
 		margin-bottom: 8%;
@@ -344,7 +371,7 @@
 			}
 			p {
 				font-size: 3vw;
-				// padding-bottom: 10%;
+				padding-bottom: 2%;
 			}
 		}
 		.slide {
@@ -356,6 +383,23 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -60%);
+			}
+		}
+		&.on {
+			margin-bottom: 5%;
+			.letters {
+				h2 {
+					width: 100%;
+					line-height: 1;
+				}
+				p {
+					width: 100%;
+				}
+			}
+			.mySwiper {
+				position: relative;
+				left: 0%;
+				margin-top: -45%;
 			}
 		}
 	}
@@ -385,7 +429,7 @@
 		h2 {
 			font-size: 5vw;
 			margin: 0px;
-			margin-bottom: 7%;
+			margin-bottom: 5%;
 		}
 		img {
 			width: 80vw;

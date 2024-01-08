@@ -24,3 +24,14 @@ body {
 	max-width: 100%;
 	overflow-x: hidden;
 }
+table {
+	border-collapse: collapse;
+}
+fieldset {
+	border: none;
+}
+.hidden {
+	position: absolute;
+	top: -9999999px;
+	opacity: 0;
+}

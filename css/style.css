@@ -36,6 +36,20 @@ body {
   overflow-x: hidden;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+fieldset {
+  border: none;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999999px;
+  opacity: 0;
+}
+
 header {
   width: 100%;
   overflow: hidden;
@@ -223,10 +237,10 @@ header .inner .moTitle .sns ul {
   width: 100%;
   height: 100%;
 }
-header .inner .moTitle .sns ul a {
+header .inner .moTitle .sns ul li a {
   display: block;
 }
-header .inner .moTitle .sns ul a img {
+header .inner .moTitle .sns ul li a img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -275,10 +289,10 @@ header .inner .moTitle .sns ul a img {
     width: 100%;
     height: 100%;
   }
-  header .inner .moTitle .sns ul a {
+  header .inner .moTitle .sns ul li a {
     display: block;
   }
-  header .inner .moTitle .sns ul a img {
+  header .inner .moTitle .sns ul li a img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -339,10 +353,10 @@ header .inner .moTitle .sns ul a img {
     width: 100%;
     height: 100%;
   }
-  header .inner .moTitle .sns ul a {
+  header .inner .moTitle .sns ul li a {
     display: block;
   }
-  header .inner .moTitle .sns ul a img {
+  header .inner .moTitle .sns ul li a img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -528,10 +542,10 @@ footer .sns ul {
   width: 100%;
   height: 100%;
 }
-footer .sns ul a {
+footer .sns ul li a {
   display: block;
 }
-footer .sns ul a img {
+footer .sns ul li a img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -947,14 +961,39 @@ footer .btnTop:hover h2 {
   width: 100%;
   height: 100%;
 }
-#header_sub .inner .moTitle .sns ul a {
+#header_sub .inner .moTitle .sns ul li a {
   display: block;
 }
-#header_sub .inner .moTitle .sns ul a img {
+#header_sub .inner .moTitle .sns ul li a img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   box-shadow: 1px 2px 5px #000;
+}
+
+.content {
+  width: 100%;
+  padding: 0 0 150px;
+}
+.content .sub_visual {
+  width: 100%;
+  height: 250px;
+  background-color: #bbb;
+  margin-bottom: 50px;
+}
+.content .inner {
+  width: 1180px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+.content .inner h1 {
+  font-family: "Pretendard-Regular";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 @media screen and (max-width: 874px) {
@@ -999,10 +1038,10 @@ footer .btnTop:hover h2 {
     width: 100%;
     height: 100%;
   }
-  #header_sub .inner .moTitle .sns ul a {
+  #header_sub .inner .moTitle .sns ul li a {
     display: block;
   }
-  #header_sub .inner .moTitle .sns ul a img {
+  #header_sub .inner .moTitle .sns ul li a img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -1063,10 +1102,10 @@ footer .btnTop:hover h2 {
     width: 100%;
     height: 100%;
   }
-  #header_sub .inner .moTitle .sns ul a {
+  #header_sub .inner .moTitle .sns ul li a {
     display: block;
   }
-  #header_sub .inner .moTitle .sns ul a img {
+  #header_sub .inner .moTitle .sns ul li a img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -1252,10 +1291,10 @@ footer .btnTop:hover h2 {
   width: 100%;
   height: 100%;
 }
-#footer_sub .sns ul a {
+#footer_sub .sns ul li a {
   display: block;
 }
-#footer_sub .sns ul a img {
+#footer_sub .sns ul li a img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -3451,7 +3490,6 @@ footer .btnTop:hover h2 {
   transition: all 1s;
 }
 .con1.on {
-  height: 350px;
   opacity: 1;
 }
 .con1.on h2 {
@@ -3650,8 +3688,8 @@ footer .btnTop:hover h2 {
     font-size: 2vw;
   }
   .con2 {
-    width: 122%;
-    height: 35vh;
+    width: 100%;
+    height: 40vh;
     padding: 0 5%;
     margin-bottom: 7%;
   }
@@ -3664,25 +3702,30 @@ footer .btnTop:hover h2 {
   .con2 .letters p {
     font-size: 2vw;
   }
-  .con2 .mySwiper {
+  .con2.on .letters h2 {
+    width: 90%;
+    line-height: 1.2;
+  }
+  .con2.on .letters p {
+    width: 115%;
+  }
+  .con2.on .mySwiper {
     width: 100%;
     height: 100%;
     position: relative;
+    left: 5%;
   }
-  .con2 .mySwiper .swiper-wrapper {
-    width: 300px;
-    height: 300px;
+  .con2.on .mySwiper .swiper-wrapper {
+    width: 385px;
+    height: 330px;
   }
-  .con2 .mySwiper .swiper-wrapper .swiper-slide {
+  .con2.on .mySwiper .swiper-wrapper .swiper-slide {
     width: 100%;
     height: 100%;
   }
-  .con2 .mySwiper .swiper-wrapper .swiper-slide img {
+  .con2.on .mySwiper .swiper-wrapper .swiper-slide img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
   }
   .con3 {
     width: 100%;
@@ -3734,7 +3777,7 @@ footer .btnTop:hover h2 {
   }
   .con2 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     flex-direction: column;
     padding: 0 5%;
     margin-bottom: 8%;
@@ -3747,6 +3790,7 @@ footer .btnTop:hover h2 {
   }
   .con2 .letters p {
     font-size: 3vw;
+    padding-bottom: 2%;
   }
   .con2 .slide {
     position: relative;
@@ -3758,6 +3802,21 @@ footer .btnTop:hover h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
+  }
+  .con2.on {
+    margin-bottom: 5%;
+  }
+  .con2.on .letters h2 {
+    width: 100%;
+    line-height: 1;
+  }
+  .con2.on .letters p {
+    width: 100%;
+  }
+  .con2.on .mySwiper {
+    position: relative;
+    left: 0%;
+    margin-top: -45%;
   }
   .con3 {
     height: 50vh;
@@ -3784,7 +3843,7 @@ footer .btnTop:hover h2 {
   .con4 h2 {
     font-size: 5vw;
     margin: 0px;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
   }
   .con4 img {
     width: 80vw;
@@ -3792,6 +3851,104 @@ footer .btnTop:hover h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+.join .sub_visual {
+  background-image: url(../img_join/ob_join.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+.join .inner #member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join .inner #member table {
+  width: 800px;
+  border-top: 1px solid #ddd;
+  margin: 50px 0px;
+  text-align: left;
+}
+.join .inner #member table tr th,
+.join .inner #member table tr td {
+  padding: 15px 20px;
+  height: 65px;
+  border-bottom: 1px solid #ddd;
+}
+.join .inner #member table tr th {
+  width: 20%;
+}
+.join .inner #member table tr th input[type=reset],
+.join .inner #member table tr th input[type=submit] {
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  font-family: "Pretendard-Regular";
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #144192;
+  cursor: pointer;
+}
+.join .inner #member table tr td {
+  position: relative;
+  border-left: 1px solid #fff;
+}
+.join .inner #member table tr td #toggleBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 32px;
+  right: -20px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join .inner #member table tr td #toggleBtn::before {
+  content: "";
+  font-family: fontAwesome;
+}
+.join .inner #member table tr td #toggleBtn.hide::before {
+  content: "";
+  font-family: fontAwesome;
+}
+.join .inner #member table tr td input[type=text],
+.join .inner #member table tr td input[type=password],
+.join .inner #member table tr td input[type=email] {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.join .inner #member table tr td input[type=radio] {
+  margin-right: 30px;
+}
+.join .inner #member table tr td p {
+  font-family: "Pretendard-Regular";
+  font-size: 11px;
+  line-height: 1;
+  color: red;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 874px) {
+  .join .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .join .inner #member table {
+    width: 100%;
+  }
+  .join .inner #member table tr th {
+    font-size: 15px;
+    padding: 0px;
+    text-align: center;
   }
 }
 
