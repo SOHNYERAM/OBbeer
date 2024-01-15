@@ -223,7 +223,6 @@
 }
 @media screen and (max-width: 874px) {
 	#guard {
-		width: 100vh;
 		height: 30vh;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -256,26 +255,6 @@
 				font-size: 2vw;
 			}
 		}
-		// .mySwiper {
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	position: relative;
-		// 	.swiper-wrapper {
-		// 		width: 300px;
-		// 		height: 300px;
-		// 		.swiper-slide {
-		// 			width: 100%;
-		// 			height: 100%;
-		// 			img {
-		// 				width: 100%;
-		// 				height: 100%;
-		// 				position: absolute;
-		// 				top: 0%;
-		// 				left: 0%;
-		// 			}
-		// 		}
-		// 	}
-		// }
 		&.on {
 			.letters {
 				h2 {

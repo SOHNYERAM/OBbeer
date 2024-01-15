@@ -539,6 +539,10 @@ footer .sns {
   transform: translate(-60%, -20%);
 }
 footer .sns ul {
+  width: 50px;
+  height: 50px;
+}
+footer .sns ul li {
   width: 100%;
   height: 100%;
 }
@@ -3670,7 +3674,6 @@ footer .btnTop:hover h2 {
 
 @media screen and (max-width: 874px) {
   #guard {
-    width: 100vh;
     height: 30vh;
     background-repeat: no-repeat;
     background-position: center;
